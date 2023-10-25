@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=U+F52A">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Vue 3</title>
+    <style></style>
+</head>
+
+<body>
+    <div class="conainer">
+        <div class="d-flex justify-content-center m-3">
+            <a href="index.html"><img src="img/dlogo.png" alt="Force Logo" /></a>
+        </div>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <a class="navbar-brand text-success" href="#">
+                    <span>Dragon Squad - TNI</span>
+                </a>
+                <button class="navbar-toggler p-1" type="button" data-bs-toggle="collapse" data-bs-target="#searchBar"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-search"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
+                        </li>
+                    </ul>
+
+                </div>
+                <form class="collapse navbar-collapse d-sm-none d-md-none classes" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                </form>
+
+            </div>
+            <hr />
+        </nav>
+        <div class="collapse" id="searchBar">
+            <form class="d-flex navbar-collapse m-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            </form>
+        </div>
+        <!-- main body section -->
+        <div class="container-fluid p-3">
+            <div class="row">
+                <!-- main contents section -->
+                <div class="col-sm-7 col-md-8 col-lg-9 my-2 text-center">
+                    <span class="text-primary fs-4 titles">Hot News</span>
+                    <hr />
+                    <div class="card mb-2 text-start">
+                        <div class="card-body">
+                            <h5 class="card-title">News Title</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel,
+                                voluptas autem temporibus neque enim iusto perspiciatis
+                                corporis distinctio fuga magni itaque fugit sapiente! Sunt
+                                odit possimus neque aperiam ab dolore.
+                            </p>
+                            <a href="#">see more ...</a>
+                        </div>
+                    </div>
+                    <div class="card mb-2 text-start">
+                        <div class="card-body">
+                            <h5 class="card-title">News Title</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel,
+                                voluptas autem temporibus neque enim iusto perspiciatis
+                                corporis distinctio fuga magni itaque fugit sapiente! Sunt
+                                odit possimus neque aperiam ab dolore.
+                            </p>
+                            <a href="#">see more ...</a>
+                        </div>
+                    </div>
+                    <div class="card mb-2 text-start">
+                        <div class="card-body">
+                            <h5 class="card-title">News Title</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel,
+                                voluptas autem temporibus neque enim iusto perspiciatis
+                                corporis distinctio fuga magni itaque fugit sapiente! Sunt
+                                odit possimus neque aperiam ab dolore.
+                            </p>
+                            <a href="#">see more ...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- category section -->
+                <div class="col-sm-5 col-md-4 col-lg-3 sidebar my-2 text-center">
+                    <span class="text-center fs-4 text-primary ">Categories</span>
+                    <hr />
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Tanintharyi News
+                            <span class="badge bg-primary rounded-pill">24</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Drone News
+                            <span class="badge bg-primary rounded-pill">2</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Battel News
+                            <span class="badge bg-primary rounded-pill">1</span>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Training News
+                            <span class="badge bg-primary rounded-pill">8</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Favourite
+                            <span class="badge bg-primary rounded-pill">5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Saved
+                            <span class="badge bg-primary rounded-pill">34</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="content text-center">
+                <span class="fs-4 text-primary p-4">Team Description</span>
+                <p class="p-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nulla consequatur modi
+                    quibusdam incidunt omnis sapiente nisi quod facilis veniam perferendis, natus assumenda ipsam iure
+                    in
+                    cupiditate provident. Dolores, nemo!
+                </p>
+            </div>
+        </div>
+
+
+
+        <!-- footer section -->
+        <footer class="container">
+            <div class="border-top border-top-2 py-3 text-center text-muted">
+                &copy; Copyright 2023
+            </div>
+        </footer>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
